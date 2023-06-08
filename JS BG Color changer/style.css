@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;1,200&family=Raleway&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  transition: 1s;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 5px;
+  margin: 10px;
+  width: 30rem;
+  height: 15rem;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  background-color: white;
+  text-align: center;
+  border: none;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
+  animation: floatUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 40px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
